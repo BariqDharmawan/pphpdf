@@ -1,0 +1,169 @@
+@import './helper.css';
+
+.pdf-wrapper {
+    width: 80%;
+}
+
+.pdf-wrapper nav {
+    letter-spacing: 10px;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+}
+
+.pdf-wrapper__header {
+    display: flex;
+}
+
+.pdf-wrapper__box-head {
+    width: 25%;
+    padding: 10px;
+    border: 2px solid black;
+    border-bottom: 3px solid black;
+}
+
+.pdf-wrapper__box-head:nth-child(2) {
+    width: 50%;
+}
+
+.pdf-wrapper__child-head {
+    padding: 8px;
+    text-align: left;
+    z-index: 1;
+    background-color: white;
+    border-top: 2px solid black;
+}
+
+.pdf-wrapper__title {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.pdf-wrapper__content-label-content {
+    display: flex;
+    
+    gap: 20px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.pdf-wrapper__main-content {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.pdf-wrapper__main-content, .pdf-wrapper__main-content th, .pdf-wrapper__main-content td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.pdf-wrapper__content-label-content table:not(.table-half) {
+    width: 100%;
+}
+.pdf-wrapper__content-label-content th {
+    width: 20%;
+}
+
+.pdf-wrapper__basic-content input {
+    border: none;
+    border-bottom: 1px solid black;
+    flex-grow: 1;
+}
+
+.pdf-wrapper__child-head--over {
+    width: 110%;
+    z-index: 2;
+    margin-bottom: -1px;
+    margin-left: -0.5px;
+    border-right: 3px solid black;
+}
+
+.pdf-wrapper__pad-left {
+    padding-left: 20%;
+}
+
+.pdf-wrapper__box-head--two-col-vertical {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.pdf-wrapper__identity {
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    border: 2px solid black;
+}
+
+.pdf-wrapper__person {
+    width: 60%;
+}
+
+.pdf-wrapper__signature {
+    display: flex;
+    width: 40%;
+}
+
+
+
+.pdf-wrapper__identity input {
+    flex-grow: 1;
+}
+
+.colon-after {
+    position: relative;
+}
+.colon-after::after {
+    content: ':';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.box-border-bottom {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.box-border-bottom + .box-border-bottom {
+    margin-left: 10px;
+}
+
+.signature-img {
+    border: 1px solid black;
+    padding: 10px;
+    height: 100px;
+}
+
+.dash-after {
+    position: relative;
+}
+.dash-after::after {
+    content: '-';
+    position: absolute;
+    right: -10px;
+}
+
+.parent-little-box {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    transform: rotate(180deg);
+    width: 120px;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+.black-box {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
+
+.white-box {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
